@@ -15,7 +15,7 @@ A laravel Boilerplate template with user management , role management, Admin LTE
 
 You can use Theme's widgets/alert/modal/table/box using laravel's components slot in blade template
 
-            #example widget
+            //example widget
             @component('components.widget')
                @slot('title') Your title @endslot
                @slot('description')
@@ -25,14 +25,15 @@ You can use Theme's widgets/alert/modal/table/box using laravel's components slo
                 your body
                @endslot
            @endcomponent
+           
 Alert component added to the blade directives for easy of use.
 
-            #so you can use alert in any blade like this;
-          
+            //so you can use alert in any blade like this;
             @alert(['type' => 'success'])
                {{$message}}
             @endalert
-            #alert type=> success,info,danger,warning; default => info
+            
+            //alert type=> success,info,danger,warning; default => info
 
 
 # Packages Included
