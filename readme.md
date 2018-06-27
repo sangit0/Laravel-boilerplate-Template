@@ -13,7 +13,7 @@ A laravel Boilerplate template with user management , role management, Admin LTE
     6. Theme Admin (AdminLTE)
     7. Widgets/alert/modal/table/box Implemented as reusable using  Laravel components & slot
 
-    You can use Theme's widgets/alert/modal/table/box using laravel's components slot in blade template
+You can use Theme's widgets/alert/modal/table/box using laravel's components slot in blade template
 
         ``` bash
             #example body
@@ -27,9 +27,9 @@ A laravel Boilerplate template with user management , role management, Admin LTE
                @endslot
            @endcomponent
         ```
-    Alert component added to the blade directives for easy of use.
+Alert component added to the blade directives for easy of use.
         ``` bash
-            #so you can use alert in any blade like this; 
+            #so you can use alert in any blade like this;
             @alert(['type' => 'success'])
                {{$message}}
             @endalert
