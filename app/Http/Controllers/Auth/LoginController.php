@@ -51,10 +51,13 @@ class LoginController extends Controller
 
             return $this->sendLockoutResponse($request);
         }
-        if(User::where($this->username(),$request->only($this->username()))->where('active',true)->get()->isEmpty())
-            return Redirect::back()->with('error', 'User has been disabed by the System Administrator!');
+        
+        /* checking user exists or not if exists then checking active or not */
+        if(User::where($this->username(),$request->only($this->username()))->exists())
+            if(User::where($this->username(),$request->only($this->username()))->where('active',true)->get()->isEmpty())
+                return Redirect::back()->with('error', 'User has been disabed by the System Administrator!');
 
-        if (Auth::attempt([$this->username() =>$request->only($this->username()), 'password' => $request->password, 'active' => 1])) {
+        if (Auth::attempt([$this->username() =>$request->only($this->username()), 'password' => $request->password])) {
             return $this->sendLoginResponse($request);
         }
 
@@ -65,5 +68,5 @@ class LoginController extends Controller
 
         return $this->sendFailedLoginResponse($request);
     }
-    
+
 }

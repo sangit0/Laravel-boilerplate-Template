@@ -24,7 +24,7 @@ class UserController extends Controller
      */
     function __construct()
     {
-         $this->middleware('permission:user-list',['only' => ['index','show']]);
+         $this->middleware('permission:user-list',['only' => ['index','show','active']]);
          $this->middleware('permission:user-create', ['only' => ['create','store']]);
          $this->middleware('permission:user-edit', ['only' => ['edit','update']]);
          $this->middleware('permission:user-delete', ['only' => ['destroy']]);
@@ -127,10 +127,10 @@ class UserController extends Controller
 
 
         $input = $request->all();
-        if(!empty($input['password'])){ 
+        if(!empty($input['password'])){
             $input['password'] = Hash::make($input['password']);
         }else{
-            $input = array_except($input,array('password'));    
+            $input = array_except($input,array('password'));
         }
 
 
@@ -169,7 +169,7 @@ class UserController extends Controller
     }
 
     public function profile($id)
-    {   
+    {
         if(Auth::user()->id!=$id)
         return Redirect('/401');
 
@@ -177,5 +177,5 @@ class UserController extends Controller
         return view('pages.users.show',compact('user'));
     }
 
-    
+
 }
