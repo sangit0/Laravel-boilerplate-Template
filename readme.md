@@ -101,8 +101,9 @@ npm run watch
   # Screenshot
 ![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshots/login.png "Screenshot")
 ![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshots/user-profile.png "Screenshot")
-![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshots/user-manager.png "Screenshot")
 ![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshots/roles.png "Screenshot")
+![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshots/access-denied.png "Screenshot")
+![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshots/user-manager.png "Screenshot")
 ![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshots/edit-user.png "Screenshot")
 ![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshots/edit-role.png "Screenshot")
 ![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshots/php-debugbar.png "Screenshot")
