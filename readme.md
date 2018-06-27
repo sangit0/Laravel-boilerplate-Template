@@ -15,7 +15,7 @@ A laravel Boilerplate template with user management , role management, Admin LTE
 
 You can use Theme's widgets/alert/modal/table/box using laravel's components slot in blade template
 
-            #example body
+            //example widget
             @component('components.widget')
                @slot('title') Your title @endslot
                @slot('description')
@@ -25,24 +25,27 @@ You can use Theme's widgets/alert/modal/table/box using laravel's components slo
                 your body
                @endslot
            @endcomponent
+           
 Alert component added to the blade directives for easy of use.
 
-            #so you can use alert in any blade like this;
+            //so you can use alert in any blade like this;
             @alert(['type' => 'success'])
                {{$message}}
             @endalert
+            
+            //alert type=> success,info,danger,warning; default => info
 
 
-# Packages
+# Packages Included
 
         #PHP Packages
             1. Laravel Permission (Spatie)
-            2. PHP debugbar [laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
+            2. PHP debugbar (https://github.com/barryvdh/laravel-debugbar)
             3. Carbon
 
         #Other JS and css Packages
             1. Bootstrap
-            2. Bootstrap slider/colorpiker/datepicker/datepicker-range/slider/timepicker/wysihtml5
+            2. Bootstrap slider|colorpiker|datepicker|datepicker-range|slider|timepicker|wysihtml5
             3. Chart.js
             4. CKeditor
             5. Datatables
@@ -52,7 +55,7 @@ Alert component added to the blade directives for easy of use.
             7. Full calender
             8. InputMask
             7. Jquery
-            8. Jquery knob/slimscroll/sparkline/ui
+            8. Jquery knob|slimscroll|sparkline|Jqueryui
             9. mocha
             10. jvectormap
             11. moment js
@@ -68,6 +71,7 @@ Alert component added to the blade directives for easy of use.
     3. customise css and related js from resources/assets/
 
 ## Run
+Copy .env.example to .env and setup your Database information.
 
 ``` bash
 # install dependencies
