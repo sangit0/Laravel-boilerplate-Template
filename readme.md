@@ -18,8 +18,9 @@ A laravel Boilerplate template with user management , role managment, Admin LTE 
         #PHP Packages
             1. Laravel Permission (Spatie)
             2. PHP debugbar (barryvdh)
+            3. Carbon
 
-        #FrontEND Packages
+        #Other JS and css Packages
             1. Bootstrap
             2. Bootstrap slider/colorpiker/datepicker/datepicker-range/slider/timepicker/wysihtml5
             3. Chart.js
@@ -42,9 +43,9 @@ A laravel Boilerplate template with user management , role managment, Admin LTE 
             16. ICheck
 
 # Note
-    All packages is not added in the webpack.mix.js for compile; only important packages are added.
-    You have to add the package you need from "resources/assets/theme-asset" folder in the webpack.mix.js file.
-    customise css and related js from resources/assets/
+    1. All packages is not added in the webpack.mix.js for compile; only important packages are added.
+    2. You have to add the package you need from "resources/assets/theme-asset" folder in the webpack.mix.js file.
+    3. customise css and related js from resources/assets/
 
 ## Run
 
@@ -67,9 +68,9 @@ php artisan serve
 npm run watch
 
 ```
-## Use DB seed for seeding Role and Permission for Role Managment and User Managment access.
 
-##Login (if u use DB seed)
+ Use DB seed for seeding Role and Permission for Role Managment and User Managment access.
+# Login (if u use DB seed)
     user admin@sangit.info
     pass: secret
 
