@@ -13,7 +13,7 @@ A laravel Boilerplate template with user management , role managment, Admin LTE 
     6. Theme Admin (AdminLTE)
     7. PHP debugbar ([laravel-debugbar](https://github.com/barryvdh/laravel-debugbar))
 
-#Packages
+# Packages
 
         #PHP Packages
             1. Laravel Permission (Spatie)
@@ -39,7 +39,7 @@ A laravel Boilerplate template with user management , role managment, Admin LTE 
             12. Packages
             13. Raphael
             14. Select 2
-            15. Hotsnackbar
+            15. Hotsnackbar (https://github.com/nakulrathore/HotSnackbar)
             16. ICheck
 
 # Note
@@ -70,7 +70,7 @@ npm run watch
 ```
 
  Use DB seed for seeding Role and Permission for Role Managment and User Managment access.
-# Login (if u use DB seed)
+# Login (if you use DB seed)
     user admin@sangit.info
     pass: secret
 
