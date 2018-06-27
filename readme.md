@@ -1,7 +1,7 @@
 
 # Laravel BoilerPlate Template
 
-A laravel Boilerplate template with user management , role managmen, Admin LTE theme and many JS and PHP packages installed
+A laravel Boilerplate template with user management , role managment, Admin LTE theme and many JS and PHP packages installed
 
 ## Run
 
