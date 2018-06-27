@@ -11,13 +11,12 @@ A laravel Boilerplate template with user management , role managment, Admin LTE 
     4. Laravel Permission([spatie-permission](https://github.com/spatie/laravel-permission))
     5. AJAX Loading and page Loading indication
     6. Theme Admin (AdminLTE)
-    7. PHP debugbar ([laravel-debugbar](https://github.com/barryvdh/laravel-debugbar))
 
 # Packages
 
         #PHP Packages
             1. Laravel Permission (Spatie)
-            2. PHP debugbar (barryvdh)
+            2. PHP debugbar [laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
             3. Carbon
 
         #Other JS and css Packages
