@@ -26,12 +26,12 @@ npm run watch
 ```
   
   # Screenshot
-![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshot/login.png "Screenshot")
-![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshot/user-profile.png "Screenshot")
-![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshot/user-manager.png "Screenshot")
-![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshot/roles.png "Screenshot")
-![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshot/edit-user.png "Screenshot")
-![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshot/edit-role.png "Screenshot")
-![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshot/php-debugbar.png "Screenshot")
+![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshots/login.png "Screenshot")
+![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshots/user-profile.png "Screenshot")
+![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshots/user-manager.png "Screenshot")
+![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshots/roles.png "Screenshot")
+![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshots/edit-user.png "Screenshot")
+![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshots/edit-role.png "Screenshot")
+![alt text](https://github.com/sangit0/Laravel-boilerplate-Template/blob/master/screenshots/php-debugbar.png "Screenshot")
 
   
