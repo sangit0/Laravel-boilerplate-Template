@@ -1,7 +1,7 @@
 
 # Laravel BoilerPlate Template
 
-A laravel Boilerplate template with user management , role managment, Admin LTE theme and many JS and PHP packages installed
+A laravel Boilerplate template with user management , role management, Admin LTE theme and many JS and PHP packages installed
 
 # Features & Implemented Module
 
@@ -11,6 +11,30 @@ A laravel Boilerplate template with user management , role managment, Admin LTE 
     4. Laravel Permission([spatie-permission](https://github.com/spatie/laravel-permission))
     5. AJAX Loading and page Loading indication
     6. Theme Admin (AdminLTE)
+    7. Widgets/alert/modal/table/box Implemented as reusable using  Laravel components & slot
+
+    You can use Theme's widgets/alert/modal/table/box using laravel's components slot in blade template
+
+        ``` bash
+            #example body
+            @component('components.widget')
+               @slot('title') Your title @endslot
+               @slot('description')
+                   your description
+               @endslot
+               @slot('body')
+                your body
+               @endslot
+           @endcomponent
+        ```
+    Alert component added to the blade directives for easy of use.
+        ``` bash
+            #so you can use alert in any blade like this; 
+            @alert(['type' => 'success'])
+               {{$message}}
+            @endalert
+        ```
+
 
 # Packages
 
@@ -68,7 +92,7 @@ npm run watch
 
 ```
 
- Use DB seed for seeding Role and Permission for Role Managment and User Managment access.
+ Use DB seed for seeding Role and Permission for Role Management and User Management access.
 # Login (if you use DB seed)
     user admin@sangit.info
     pass: secret
