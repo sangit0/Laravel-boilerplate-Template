@@ -8,12 +8,13 @@ A laravel Boilerplate template with user management , role managment, Admin LTE 
     1. Authentication with user disabed/enabled implementation
     2. User management
     3. Role management
-    4. Laravel Permission([spatie-permission](https://github.com/spatie/laravel-permission)
+    4. Laravel Permission([spatie-permission](https://github.com/spatie/laravel-permission))
     5. AJAX Loading and page Loading indication
     6. Theme Admin (AdminLTE)
-    7. PHP debugbar ([laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
+    7. PHP debugbar ([laravel-debugbar](https://github.com/barryvdh/laravel-debugbar))
 
 #Packages
+
         #PHP Packages
             1. Laravel Permission (Spatie)
             2. PHP debugbar (barryvdh)
@@ -41,8 +42,8 @@ A laravel Boilerplate template with user management , role managment, Admin LTE 
             16. ICheck
 
 # Note
-    All packages is not added in the webpack.mix.js for compile; only important packages are added. You have to add the package you need from "resources/assets/theme-asset" folder in the webpack.mix.js file.
-
+    All packages is not added in the webpack.mix.js for compile; only important packages are added.
+    You have to add the package you need from "resources/assets/theme-asset" folder in the webpack.mix.js file.
     customise css and related js from resources/assets/
 
 ## Run
