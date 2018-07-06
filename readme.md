@@ -10,7 +10,7 @@ A laravel Boilerplate template with user management , role management, Admin LTE
 4. Laravel Permission [spatie-permission](https://github.com/spatie/laravel-permission) 
 5. AJAX Loading and page Loading indication
 6. Theme Admin (AdminLTE)
-7. Reusable Custom function for Bootstrap validation, Get form Data, Ajax
+7. Reusable Custom function for Bootstrap validation, get Form Data, Ajax
 and more
 8. Widgets/alert/modal/table/box Implemented as reusable using  Laravel components & slot
 
@@ -30,7 +30,7 @@ and more
            @endcomponent
     ```        
            
-2. Alert component added to the blade directives for easy of use.
+2. Alert component added to the blade directives for ease of use.
     ``` bash
             #so you can use alert in any blade like this;
             @alert(['type' => 'success'])
@@ -41,7 +41,8 @@ and more
             # default type => info
     ```
 3. Easy readymade function provided for Bootstrap-validator
-            **1. Validation Check**
+    
+    **1. Validation Check**
     ``` bash
  
             #Example: Suppose Your Form
@@ -78,7 +79,7 @@ and more
             #Object key will be input tag ID and value will be inputed value;
     ```
  
-4. Using EasyAjax
+4. Using EasyAjax:
     You can easily use easyAjax Module which will help you to use Ajax as resuable function and keep your code clean.
     Example:
     ``` bash
@@ -111,7 +112,7 @@ and more
     ```
 In the EasyAJAX module CSRF Token Added in the before send method.
 
-5. Using EasyCRUD: Recommended way of excuting a query is using DB::beginTransaction and DB::commit method; so that you can cancel the transaction using DB::rollback method if exception happened at the middle of an excuting query. It ensures No data will be affected until the transaction is committed.
+5. Using EasyCRUD: Recommended way of excuting a query is using DB::beginTransaction and DB::commit method, so that you can cancel the transaction using DB::rollback method if exception happened at the middle of an excuting query. It ensures No data will be affected until the transaction is committed.
 ``` bash
     #example
      DB::beginTransaction();
@@ -130,9 +131,15 @@ In the EasyAJAX module CSRF Token Added in the before send method.
             return response()->json(['message' => 'DB problem'], 500);
         }
         DB::commit();
-        return response()->json(['message' => "Done successfully"], 201);
+        return $model
+        #data commit successfull
+        
+        
 ```
-##### You can easily use  Transaction,Rollback and Commit Features without any hassle using a facades named EasyCRUD which will ensure ease of use and to keep the code clean.
+:point_down: :point_down: :point_down: :point_down: :point_down::point_down::point_down: :point_down: :point_down:
+
+
+#####If you are using this template you can easily use  Transaction,Rollback and Commit Features without any hassle using a facades named EasyCRUD which will ensure ease of use and to keep the code clean.
 ```bash
     #example
     #import
@@ -142,7 +149,7 @@ In the EasyAJAX module CSRF Token Added in the before send method.
     $model->name = "Sangit";
     $model = EasyCrud::create($model);
  ```
-##### This three lines are equivalent to the showed example of Transaction, Rollback and Commit method above.
+##### :arrow_up:  These three lines are equivalent to the showed example of Transaction, Rollback and Commit method above.
     
  ``` bash   
     #Similarly as Create method of easycrud you can use
