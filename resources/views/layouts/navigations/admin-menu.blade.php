@@ -1,8 +1,8 @@
-@role('Admin')
+@role('super-admin')
 <li class="treeview">
     <a href="#">
         <i class="fa fa-eercast"></i>
-        <span>Admin</span>
+        <span>System Admin</span>
         <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
         </span>
@@ -14,5 +14,6 @@
         </li>
         <li><a href="{{URL::to('/roles')}}"><i class="fa fa-snowflake-o"></i>roles</a></li>
     </ul>
+
 </li>
 @endrole

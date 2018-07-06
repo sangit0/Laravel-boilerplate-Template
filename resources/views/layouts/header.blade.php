@@ -6,4 +6,4 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>  {{ config('app.name') }} {{ config('app.name_last') }} </title>
     <link rel="stylesheet" href="{{ asset('/css/everything_css.css')}}">
-    
+    <script src="{{ asset('/js/everything_js.js')}}"></script>

@@ -1,14 +1,14 @@
 @extends('layouts.admin-app')
-
-
 @section('content')
+    @component('components.box',["type"=>'primary'])
+        @slot('title')
+            <i class="fa fa-user">  Create New User</i>
+        @endslot
+        @slot('body')
 <div class="row">
     <div class="col-lg-12 margin-tb">
-        <div class="pull-left">
-            <h2>Create New Role</h2>
-        </div>
         <div class="pull-right">
-            <a class="btn btn-primary btn-sm" href="{{ route('roles.index') }}"> Back</a>
+            <a class="btn btn-primary btn-sm" href="{{ route('roles.index') }}"> <i class="fa fa-arrow-left"></i> Back</a>
         </div>
     </div>
 </div>
@@ -50,6 +50,7 @@
     </div>
 </div>
 {!! Form::close() !!}
-
+@endslot
+@endcomponent
 
 @endsection

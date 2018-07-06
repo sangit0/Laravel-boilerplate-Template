@@ -1,11 +1,14 @@
 @extends('layouts.admin-app')
-
-
 @section('content')
+    @component('components.box',["type"=>'primary'])
+        @slot('title')
+        <i class="fa fa-ravelry">  Roles Edit</i>
+    @endslot
+    @slot('body')
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
-                <a class="btn btn-primary" href="{{ route('users.index') }}">                 
+                <a class="btn btn-primary" href="{{ route('roles.index') }}">
                         <i class="fa fa-arrow-left"></i> 
                         Back
                 </a>
@@ -51,6 +54,7 @@
     </div>
 </div>
 {!! Form::close() !!}
-
+    @endslot
+    @endcomponent
 
 @endsection

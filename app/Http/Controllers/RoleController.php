@@ -9,7 +9,7 @@ use App\Http\Controllers\Controller;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 use DB;
-
+use EasyCrud;
 
 class RoleController extends Controller
 {
@@ -141,7 +141,9 @@ class RoleController extends Controller
      */
     public function destroy($id)
     {
-        DB::table("roles")->where('id',$id)->delete();
+        $role = Role::find($id);
+        //EasyCrud
+        EasyCrud::delete($role);
         return redirect()->route('roles.index')
                         ->with('success','Role deleted successfully');
     }

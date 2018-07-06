@@ -1,12 +1,12 @@
 @extends('layouts.admin-app')
-
-
 @section('content')
+    @component('components.box',["type"=>'primary'])
+        @slot('title')
+            <i class="fa fa-user">  Users Management</i>
+        @endslot
+        @slot('body')
 <div class="row">
     <div class="col-lg-12 margin-tb">
-        <div>
-            <h2>Users Management</h2>
-        </div>
         <div>
             <a class="btn bg-olive" href="{{ route('users.create') }}"> 
                 <i class="fa fa-user-plus">
@@ -58,8 +58,8 @@
       @endif
     </td>
     <td>
-       <a class="btn bg-olive btn-sm btn-flat" href="{{ route('users.show',$user->id) }}">Show</a>
-       <a class="btn btn-primary btn-sm btn-flat" href="{{ route('users.edit',$user->id) }}">Edit</a>
+       <a class="btn bg-olive btn-sm btn-flat" href="{{ route('users.show',$user->id) }}"> <i class="fa fa-eye"></i> Show</a>
+       <a class="btn btn-primary btn-sm btn-flat" href="{{ route('users.edit',$user->id) }}"> <i class="fa fa-pencil"></i> Edit</a>
 
  
         {!! Form::open(['method' => 'DELETE','route' => ['users.destroy', $user->id],'style'=>'display:inline']) !!}
@@ -70,8 +70,7 @@
  @endforeach
 </table>
 
-
 {!! $data->render() !!}
-
-
+        @endslot
+    @endcomponent
 @endsection

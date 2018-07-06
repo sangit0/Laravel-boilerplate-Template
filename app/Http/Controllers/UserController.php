@@ -11,7 +11,7 @@ use Spatie\Permission\Models\Role;
 use DB;
 use Hash;
 use Auth;
-
+use EasyCrud;
 use Illuminate\Support\Facades\Redirect;
 
 
@@ -69,8 +69,11 @@ class UserController extends Controller
         $input = $request->all();
         $input['password'] = Hash::make($input['password']);
 
-
-        $user = User::create($input);
+        /*  
+            Using EasyCrud
+        */
+        $user =new User($input);
+        $user = EasyCrud::create($user);
         $user->assignRole($request->input('roles'));
 
 

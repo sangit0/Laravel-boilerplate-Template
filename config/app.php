@@ -162,6 +162,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Spatie\Permission\PermissionServiceProvider::class,
+        App\Providers\CrudSangitProvider::class,
 
 
 
@@ -213,6 +214,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'EasyCrud'       => App\Facades\CrudSangitFacades::class,
+
 
     ],
 

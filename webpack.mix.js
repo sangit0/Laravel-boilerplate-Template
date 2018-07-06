@@ -10,12 +10,14 @@ mix.styles([
         'resources/assets/theme-asset/hotsnackbar/hotsnackbar.css',
         'resources/assets/theme-asset/bower_components/select2/dist/css/select2.min.css',
         'public/font-awesome/css/font-awesome.min.css',
-        'resources/assets/app.css'
+        'resources/assets/app.css',
+        'node_modules/bootstrap-sweetalert/dist/sweetalert.css'
+
     ], 'public/css/everything_css.css')
 
 .combine([
         'resources/assets/theme-asset/bower_components/jquery/dist/jquery.min.js',
-        'resources/assets/theme-asset/bower_components/jquery-ui/jquery-ui.min.js',
+        'resources/assets/theme-asset/bootstrap-validator/dist/validator.min.js',
         'resources/assets/theme-asset/bower_components/bootstrap/dist/js/bootstrap.min.js',
         'resources/assets/theme-asset/bower_components/moment/min/moment.min.js',
         'resources/assets/theme-asset/bower_components/datatables.net/js/jquery.dataTables.min.js',
@@ -26,7 +28,9 @@ mix.styles([
         'resources/assets/theme-asset/hotsnackbar/hotsnackbar.js',
         'resources/assets/theme-asset/bower_components/select2/dist/js/select2.full.min.js',
         'resources/assets/theme-asset/dist/js/adminlte.min.js',
-        'resources/assets/app.js'
+        'resources/assets/app.js',
+        'node_modules/bootstrap-sweetalert/dist/sweetalert.min.js',
+        'resources/assets/EasyAjax.js'
 
     ], 'public/js/everything_js.js').browserSync('http://localhost:8000');
     

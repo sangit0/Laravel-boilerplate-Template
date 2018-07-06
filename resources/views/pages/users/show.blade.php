@@ -1,7 +1,11 @@
 @extends('layouts.admin-app')
 
-
 @section('content')
+    @component('components.box',["type"=>'primary'])
+        @slot('title')
+            <i class="fa fa-user">  User Profile</i>
+        @endslot
+        @slot('body')
 <div class="row">
 <div class="col-md-10">
     @role('Admin')
@@ -91,5 +95,6 @@
       </div>
     </div>
 </div>
-
+        @endslot
+    @endcomponent
 @endsection
