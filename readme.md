@@ -85,28 +85,29 @@ and more
     ``` bash
        #post
         EasyAjax.post(data,"/clients").done(function (data) {
-            //done        
+            #done        
         }).fail(function () {
-            //error       
+            #error       
         });
 
         #get
-        EasyAjax.get("/clients").done(function () {
-            //done        
+        EasyAjax.get("/clients").done(function (data) {
+            #done
+            console.log(data);        
         });
 
         #put
         EasyAjax.post(data,"/clients").done(function () {
-            //done        
+            #done        
         }).fail(function () {
-            //error       
+            #error       
         });
 
         #delete
         EasyAjax.delete("/clients/1").done(function () {
-            //done        
+            #done        
         }).fail(function () {
-            //error       
+            #error       
         });
 
     ```
@@ -136,10 +137,10 @@ In the EasyAJAX module CSRF Token Added in the before send method.
         
         
 ```
-:point_down: :point_down: :point_down: :point_down: :point_down::point_down::point_down: :point_down: :point_down:
+:point_down: :point_down: :point_down: :point_down: :point_down: :point_down: :point_down: :point_down: :point_down:
 
 
-#####If you are using this template you can easily use  Transaction,Rollback and Commit Features without any hassle using a facades named EasyCRUD which will ensure ease of use and to keep the code clean.
+##### If you are using this template you can easily use  Transaction,Rollback and Commit Features without any hassle using a facades named EasyCRUD which will ensure ease of use and to keep the code clean.
 ```bash
     #example
     #import
@@ -158,12 +159,12 @@ In the EasyAJAX module CSRF Token Added in the before send method.
     EasyCrud::restore($model);
 ```            
 # Packages Included
-####PHP Packages
+#### PHP Packages
 1. Laravel Permission [spatie-permission](https://github.com/spatie/laravel-permission) 
 2. PHP debugbar ( [barryvdh debugbar](https://github.com/barryvdh/laravel-debugbar) )
 3. Carbon
 
-####Other JS and css Packages
+#### Other JS and css Packages
 1. Bootstrap
 2. Bootstrap slider|colorpiker|datepicker|datepicker-ranslider|timepicker|wysihtml5
 3. Chart.js
